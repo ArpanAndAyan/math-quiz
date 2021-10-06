@@ -492,28 +492,72 @@
 		  },
 			{
 			numb: 5,
-			question: "(4x - 2y + z)(5x - 5y + z)",
-			answer: "20x² - 30xy + 9xz - 10y² + 3yz + z²",
+			question: "(x + 2)(x - 2)(x² + 4)",
+			answer: "x⁴ - 16",
 			options: [
-			  "20x² - 30xy + 9xz - 10y² + 3yz + z²",
-			  "5x² - 54xy + 4xz - 43y² + 10yz + 4z²",
-			  "72x² - 15xy + 3xz - 34y² + 5yz + 3z²",
-			  "24x² - 37xy + 7xz - 23y² + 4yz + 76z²",
+			  "x⁴ - 16",
+			  "x⁵ - 15",
+			  "x⁴ - 8",
+			  "x² - 15"
 			]
 		  },
 			{
 			numb: 6,
-			question: "What does XML stand for?",
-			answer: "eXtensible Markup Language",
+			question: "(4x + 3x² + 5x³) + (4x² - 7x + 5) + (x³ - 1)",
+			answer: "6x³ + 7x² - 3x + 4",
 			options: [
-			  "eXtensible Markup Language",
-			  "eXecutable Multiple Language",
-			  "eXTra Multi-Program Language",
-			  "eXamine Multiple Language"
+			  "7x + 4x² - 5x + 8",
+			  "6x³ + 7x² - 3x + 4",
+			  "2x² + 3x² - 7x + 2",
+			  "2x⁴ + 5x² - 8x + 5"
+			]
+		  },
+			{
+			numb: 7,
+			question: "(x³ + 2x⁴ + 4x²) + (4x⁴ - 4x² + x⁸) + (x⁷ - x⁵)",
+			answer: "x⁸ + x⁷ + x⁵ + 6x⁴ + x³",
+			options: [
+			  "x⁸ + x⁷ + x⁵ + 6x⁴ + x³",
+			  "4x⁸ + x⁷ + 6x⁵ + 5x⁴ + 7x³",
+			  "3x⁸ + 7x⁷ + x⁵ + 4x⁴ + 2x³",
+			  "7x⁸ + 6x⁷ + 5x⁵ + 6x⁴ + x³"
+			]
+		  },
+			{
+			numb: 8,
+			question: "(4x² - 7xy + 6y²) + (4x² + 7xy - 6y² + 4xy + 8y²)",
+			answer: "8x² + 4xy - 8y²",
+			options: [
+			  "8x² + 4xy - 8y²",
+			  "5x² + 4xy - 5y²",
+			  "6x² + 1xy - 8y²",
+			  "8x² + 7xy - 6y²",
+			]
+		  },
+			{
+			numb: 9,
+			question: "(2 - x - x²) + (x² + x + 3) + (4x² + 5x + 7)",
+			answer: "4x² + 5x + 12",
+			options: [
+			  "4x² + 5x + 12",
+			  "5x² + 5x + 45",
+			  "4x² + 6x + 24",
+			  "5x² + 5x + 12",
+			]
+		  },
+			{
+			numb: 10,
+			question: "(4x² + 5x + 6) + (x² + 1) + (5x³ + 4x + 3)",
+			answer: "5x³ + 5x² + 9x + 10",
+			options: [
+			  "5x³ + 5x² + 9x + 10",
+			  "7x³ + 6x² + 9x + 43",
+			  "5x³ + 5x² + 5x + 53",
+			  "7x³ + 7x² + 8x + 10",
 			]
 		  },
 		  // you can uncomment the below codes and make duplicate as more as you want to add question
-		  // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
+		  // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9,10.....
 
 		  //   {
 		  //   numb: 6,
@@ -658,12 +702,12 @@
 				answer.classList.add("incorrect"); //adding red color to correct selected option
 				console.log("Wrong Answer");
 
-				for(i=0; i < allOptions; i++){
-					if(option_list.children[i].textContent == correcAns){ //if there is an option which is matched to an array answer 
-						option_list.children[i].setAttribute("class", "option correct"); //adding green color to matched option
-						console.log("Auto selected correct answer.");
-					}
-				}
+				//for(i=0; i < allOptions; i++){
+				//	if(option_list.children[i].textContent == correcAns){ //if there is an option which is matched to an array answer 
+				//		option_list.children[i].setAttribute("class", "option correct"); //adding green color to matched option
+				//		console.log("Auto selected correct answer.");
+				//	}
+				//}
 			}
 			for(i=0; i < allOptions; i++){
 				option_list.children[i].classList.add("disabled"); //once user select an option then disabled all options
